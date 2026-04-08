@@ -1,0 +1,22 @@
+{
+  "name": "simone-outreach-agents",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI agents that find local businesses without websites, draft and send outreach emails, and generate starter websites.",
+  "type": "module",
+  "scripts": {
+    "find": "node src/findProspects.js",
+    "draft": "node src/writeEmail.js",
+    "send": "node src/sendEmail.js",
+    "site": "node src/generateSite.js",
+    "run": "node src/run.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.15"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

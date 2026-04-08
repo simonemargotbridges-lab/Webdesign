@@ -1,0 +1,6 @@
+node_modules/
+.env
+data/prospects.json
+data/sent-log.json
+generated-sites/
+*.log
