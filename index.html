@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simone Bridges — Web Design</title>
+  <meta name="description" content="Professional web design for local businesses. Fast, beautiful, mobile-ready websites at prices that make sense." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:ital,wght@0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===========================
+       NAVIGATION
+  =========================== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">Simone<span class="dot">.</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#services">Pricing</a></li>
+          <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#portfolio" class="mobile-link">Work</a>
+    <a href="#services" class="mobile-link">Pricing</a>
+    <a href="#contact" class="mobile-link">Get in Touch</a>
+  </div>
+
+  <!-- ===========================
+       HERO
+  =========================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+
+    <div class="hero-content container">
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available for new projects
+        </div>
+
+        <h1 class="hero-title">
+          I build websites<br />
+          that <span class="accent">grow your</span><br />
+          business.
+        </h1>
+
+        <p class="hero-subtitle">
+          Professional, mobile-ready websites for local businesses — no tech knowledge required, no agency prices.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-white">See My Work</a>
+          <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===========================
+       ABOUT
+  =========================== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="grid-2">
+
+        <div class="about-photo-wrap reveal">
+          <div class="about-photo-ring"></div>
+          <!-- To use your photo, save it as assets/simone.jpg and uncomment the img tag below, then remove the placeholder div -->
+          <img src="assets/simone.jpg" alt="Simone Bridges" class="about-photo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+          <div class="about-photo-placeholder" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+            </svg>
+          </div>
+
+          <div class="about-badge-float top-right reveal reveal-delay-1">
+            <span class="about-badge-icon">🎓</span>
+            Dana Hall School
+          </div>
+          <div class="about-badge-float bottom-left reveal reveal-delay-2">
+            <span class="about-badge-icon">🗽</span>
+            NYU Class of 2030
+          </div>
+        </div>
+
+        <div class="about-text reveal reveal-delay-1">
+          <span class="section-label">About Me</span>
+          <h2>Hi, I'm Simone Bridges.</h2>
+          <p class="tagline">Web designer, problem-solver, your business's biggest fan.</p>
+
+          <p>
+            I'm a senior at Dana Hall School in Wellesley, and this fall I'll be heading to NYU. I've always believed that every local business — no matter how small — deserves a professional online presence. A great website isn't a luxury. It's how customers find you.
+          </p>
+          <p>
+            I build clean, fast, mobile-ready websites tailored to your business. No bloated templates, no technical jargon, no agency price tags. Just a beautiful site that works — and brings in customers.
+          </p>
+          <p>
+            Whether you're a nail salon, a plumber, a bakery, or anything in between — if you don't have a website yet, let's change that.
+          </p>
+
+          <div class="about-creds">
+            <span class="cred-badge">🏫 Dana Hall School</span>
+            <span class="cred-badge">🗽 NYU Class of 2030</span>
+            <span class="cred-badge">📱 Mobile-First Design</span>
+            <span class="cred-badge">⚡ Fast Load Times</span>
+            <span class="cred-badge">🔍 SEO-Ready</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       PORTFOLIO
+  =========================== -->
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title reveal">Websites I've Built</h2>
+        <p class="section-subtitle reveal reveal-delay-1">
+          From nail salons to plumbers, I create sites that fit your brand and bring in real customers.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- Card 1: Luxe Nails -->
+        <div class="portfolio-card reveal">
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+              </div>
+              <span class="browser-url">luxenailsandspa.com</span>
+            </div>
+            <div class="browser-preview browser-preview-nails">
+              <div class="browser-preview-text">
+                <div class="browser-preview-title">Luxe Nails &amp; Spa</div>
+                <div class="browser-preview-sub">Needham, MA · Book Online</div>
+              </div>
+              <span class="browser-preview-badge">Live Demo</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Nail Salon</p>
+            <h3 class="card-title">Luxe Nails &amp; Spa</h3>
+            <p class="card-desc">A full-service nail salon site with online booking, a services menu with pricing, and an elegant gallery — all in a warm, luxurious design.</p>
+            <a href="demos/luxe-nails/index.html" target="_blank" class="card-link">
+              View Live Demo
+              <svg class="card-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: QuickFix Plumbing -->
+        <div class="portfolio-card reveal reveal-delay-1">
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+              </div>
+              <span class="browser-url">quickfixplumbing.com</span>
+            </div>
+            <div class="browser-preview browser-preview-plumbing">
+              <div class="browser-preview-text">
+                <div class="browser-preview-title">QuickFix Plumbing</div>
+                <div class="browser-preview-sub">24/7 Emergency Service · Newton, MA</div>
+              </div>
+              <span class="browser-preview-badge">Live Demo</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Home Services</p>
+            <h3 class="card-title">QuickFix Plumbing</h3>
+            <p class="card-desc">A trust-forward site for a local plumber — with service listings, testimonials, and a prominent call-to-action that turns visitors into calls.</p>
+            <a href="demos/quickfix-plumbing/index.html" target="_blank" class="card-link">
+              View Live Demo
+              <svg class="card-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Sweet Crumbs Bakery -->
+        <div class="portfolio-card reveal reveal-delay-2">
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+                <span class="browser-dot"></span>
+              </div>
+              <span class="browser-url">sweetcrumbsbakery.com</span>
+            </div>
+            <div class="browser-preview browser-preview-bakery">
+              <div class="browser-preview-text">
+                <div class="browser-preview-title">Sweet Crumbs Bakery</div>
+                <div class="browser-preview-sub">Wellesley, MA · Baked Fresh Daily</div>
+              </div>
+              <span class="browser-preview-badge">Live Demo</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-tag">Food &amp; Bakery</p>
+            <h3 class="card-title">Sweet Crumbs Bakery</h3>
+            <p class="card-desc">A warm, artisanal bakery site with a menu of signature items, an "Our Story" section, and a custom cake order form — all in an inviting design.</p>
+            <a href="demos/sweet-crumbs-bakery/index.html" target="_blank" class="card-link">
+              View Live Demo
+              <svg class="card-link-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       SERVICES / PRICING
+  =========================== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title reveal">Simple, Transparent Pricing</h2>
+        <p class="section-subtitle reveal reveal-delay-1">
+          No hidden fees, no confusing packages. Pick what fits your business.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Starter -->
+        <div class="pricing-card reveal">
+          <p class="pricing-tier">Starter</p>
+          <div class="pricing-price">$299</div>
+          <p class="pricing-price-note">One-time, no monthly fees</p>
+          <ul class="pricing-features">
+            <li>1-page website</li>
+            <li>Mobile responsive design</li>
+            <li>Contact form</li>
+            <li>Google Maps integration</li>
+            <li>1 round of revisions</li>
+            <li>Hosting setup guidance</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" style="width:100%; justify-content:center;">Get Started</a>
+        </div>
+
+        <!-- Standard (featured) -->
+        <div class="pricing-card featured reveal reveal-delay-1">
+          <div class="pricing-badge">Most Popular</div>
+          <p class="pricing-tier">Standard</p>
+          <div class="pricing-price">$599</div>
+          <p class="pricing-price-note">One-time, no monthly fees</p>
+          <ul class="pricing-features">
+            <li>Up to 5 pages</li>
+            <li>Mobile responsive design</li>
+            <li>Menu, gallery, or services section</li>
+            <li>Contact &amp; booking form</li>
+            <li>Basic SEO setup</li>
+            <li>2 rounds of revisions</li>
+            <li>Hosting setup guidance</li>
+            <li>30-day post-launch support</li>
+          </ul>
+          <a href="#contact" class="btn btn-white" style="width:100%; justify-content:center;">Get Started</a>
+        </div>
+
+        <!-- Premium -->
+        <div class="pricing-card reveal reveal-delay-2">
+          <p class="pricing-tier">Premium</p>
+          <div class="pricing-price">$999<span style="font-size:1.5rem;font-weight:600;">+</span></div>
+          <p class="pricing-price-note">Custom quote</p>
+          <ul class="pricing-features">
+            <li>Fully custom design</li>
+            <li>Unlimited pages</li>
+            <li>Online booking integration</li>
+            <li>Photo gallery</li>
+            <li>Advanced SEO</li>
+            <li>Unlimited revisions</li>
+            <li>Priority delivery</li>
+            <li>60-day post-launch support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" style="width:100%; justify-content:center;">Get a Quote</a>
+        </div>
+
+      </div>
+
+      <p class="pricing-note reveal">
+        All packages include mobile-first design, fast load times, and a site your customers will actually use.<br />
+        Not sure which package is right for you? <a href="#contact" style="color:var(--color-primary); font-weight:600;">Let's talk — it's free.</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===========================
+       CONTACT
+  =========================== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <span class="section-label">Contact</span>
+          <h2>Ready to get online?</h2>
+          <p>
+            Send me a message and I'll get back to you within 24 hours. No pressure, no sales pitch — just a quick conversation about your business and what you need.
+          </p>
+
+          <div class="contact-detail">
+            <span class="contact-detail-icon">✉️</span>
+            <a href="mailto:simone@example.com">simone@example.com</a>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-icon">📍</span>
+            <span>Wellesley, MA &amp; surrounding areas</span>
+          </div>
+          <div class="contact-detail">
+            <span class="contact-detail-icon">⚡</span>
+            <span>Response within 24 hours</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal reveal-delay-1">
+          <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Your Name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="business">Business Name</label>
+                <input class="form-input" type="text" id="business" name="business" placeholder="Smith's Bakery" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone (optional)</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(617) 555-0100" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="industry">What kind of business?</label>
+              <select class="form-select" id="industry" name="industry">
+                <option value="" disabled selected>Select your industry…</option>
+                <option value="restaurant">Restaurant / Food</option>
+                <option value="beauty">Health &amp; Beauty (Nails, Hair, Spa)</option>
+                <option value="home-services">Home Services (Plumbing, HVAC, etc.)</option>
+                <option value="retail">Retail / Shop</option>
+                <option value="bakery">Bakery / Café</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Tell me about your business</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="What does your business do? Do you have a website already? Anything specific you'd like on your new site?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/>
+              </svg>
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">✅</div>
+            <h3>Message sent!</h3>
+            <p>Thanks for reaching out. I'll be in touch within 24 hours.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Simone<span class="dot">.</span></span>
+        <nav class="footer-links">
+          <a href="#about">About</a>
+          <a href="#portfolio">Work</a>
+          <a href="#services">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2025 Simone Bridges · Serving the Boston area and beyond</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
