@@ -1,0 +1,17 @@
+{
+  "name": "resell-hub",
+  "version": "1.0.0",
+  "description": "Upload a listing once, get an AI-written trendy description and price suggestion, cross-list to resale marketplaces, and auto-unlist everywhere once it sells.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^2.3.0"
+  }
+}

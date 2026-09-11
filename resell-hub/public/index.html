@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resell Hub</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">RH</span>
+      <div>
+        <h1>Resell Hub</h1>
+        <p>Snap it, list it everywhere, get paid.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel new-listing">
+      <h2>New listing</h2>
+      <form id="listing-form">
+        <div id="dropzone" class="dropzone">
+          <input type="file" id="images" name="images" accept="image/*" multiple hidden />
+          <p><strong>Click to add photos</strong> or drag them here</p>
+          <div id="preview-strip" class="preview-strip"></div>
+        </div>
+
+        <label>Title
+          <input type="text" name="title" placeholder="e.g. Levi's 501 high-rise jeans" required />
+        </label>
+
+        <div class="grid-2">
+          <label>Category
+            <select name="category" required>
+              <option value="tops">Tops</option>
+              <option value="dresses">Dresses</option>
+              <option value="outerwear">Outerwear</option>
+              <option value="denim">Denim</option>
+              <option value="shoes">Shoes</option>
+              <option value="bags">Bags</option>
+              <option value="accessories">Accessories</option>
+              <option value="activewear">Activewear</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>Condition
+            <select name="condition" required>
+              <option value="new-with-tags">New with tags</option>
+              <option value="like-new">Like new</option>
+              <option value="good" selected>Good</option>
+              <option value="fair">Fair</option>
+              <option value="worn">Well worn</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="grid-2">
+          <label>Brand <span class="muted">(optional)</span>
+            <input type="text" name="brand" placeholder="e.g. Nike" />
+          </label>
+          <label>Size <span class="muted">(optional)</span>
+            <input type="text" name="size" placeholder="e.g. M / UK 8 / 42" />
+          </label>
+        </div>
+
+        <label>Notes for the AI <span class="muted">(fit, flaws, story — optional)</span>
+          <textarea name="notes" rows="2" placeholder="Runs small, tiny mark on the cuff, worn twice..."></textarea>
+        </label>
+
+        <button type="submit" class="btn primary">✨ Generate listing</button>
+      </form>
+    </section>
+
+    <section class="panel generated" id="generated-panel" hidden>
+      <h2>Generated listing</h2>
+      <div class="ai-badge" id="ai-source"></div>
+
+      <label>Description
+        <textarea id="gen-description" rows="4"></textarea>
+      </label>
+
+      <div id="gen-hashtags" class="hashtags"></div>
+
+      <div class="price-box">
+        <label>List price
+          <div class="price-input"><span>$</span><input type="number" id="gen-price-list" /></div>
+        </label>
+        <div class="price-range">Fair range: $<span id="gen-price-low"></span> – $<span id="gen-price-high"></span></div>
+      </div>
+
+      <h3>Cross-list to</h3>
+      <div id="marketplace-picker" class="marketplace-picker"></div>
+
+      <div class="actions">
+        <button class="btn secondary" id="save-edits-btn">Save edits</button>
+        <button class="btn primary" id="publish-btn">🚀 Publish to selected</button>
+      </div>
+    </section>
+  </main>
+
+  <section class="panel listings">
+    <h2>Your listings</h2>
+    <div id="listings-grid" class="listings-grid"></div>
+  </section>
+
+  <template id="listing-card-template">
+    <article class="listing-card">
+      <div class="card-image">
+        <img />
+        <span class="overall-status"></span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title"></h3>
+        <p class="card-price"></p>
+        <div class="card-marketplaces"></div>
+        <div class="card-actions">
+          <button class="btn small sold-btn">Mark as sold</button>
+          <button class="btn small ghost delete-btn">Delete</button>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
