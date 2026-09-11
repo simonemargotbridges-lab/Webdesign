@@ -1,0 +1,261 @@
+:root {
+  --bg: #f6f5fb;
+  --panel: #ffffff;
+  --ink: #1c1a2b;
+  --muted: #726f8c;
+  --border: #e6e3f2;
+  --accent: #6c4ff2;
+  --accent-ink: #ffffff;
+  --accent-soft: #efeaff;
+  --good: #1c8a5a;
+  --good-bg: #e3f6ec;
+  --amber: #9a6b00;
+  --amber-bg: #fdf0d5;
+  --gray-bg: #ece9f7;
+  --red: #b3261e;
+  --red-bg: #fbe6e4;
+  --radius: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  padding-bottom: 60px;
+}
+
+.topbar {
+  padding: 28px 24px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.brand { display: flex; align-items: center; gap: 14px; }
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6c4ff2, #ff5ea8);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand h1 { margin: 0; font-size: 22px; }
+.brand p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+
+.layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+}
+
+.panel h2 { margin: 0 0 16px; font-size: 17px; }
+.panel h3 { margin: 18px 0 8px; font-size: 14px; color: var(--muted); }
+
+form label {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.muted { color: #a8a5bd; font-weight: 400; }
+
+input[type="text"], input[type="number"], select, textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fbfaff;
+  font-size: 14px;
+  color: var(--ink);
+  font-family: inherit;
+}
+
+textarea { resize: vertical; }
+
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.dropzone.dragover { border-color: var(--accent); background: var(--accent-soft); }
+
+.preview-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.preview-strip img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.primary { background: var(--accent); color: var(--accent-ink); }
+.btn.secondary { background: var(--accent-soft); color: var(--accent); }
+.btn.ghost { background: transparent; color: var(--muted); border: 1px solid var(--border); }
+.btn.small { padding: 7px 12px; font-size: 13px; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.actions { display: flex; gap: 10px; margin-top: 18px; }
+
+.ai-badge {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--accent);
+  background: var(--accent-soft);
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+}
+
+.hashtags { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 14px; }
+.hashtags span {
+  background: var(--gray-bg);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 4px 9px;
+  border-radius: 999px;
+}
+
+.price-box { margin: 10px 0 6px; }
+.price-input { display: flex; align-items: center; gap: 4px; margin-top: 6px; }
+.price-input span { color: var(--muted); }
+.price-input input { margin-top: 0; }
+.price-range { font-size: 13px; color: var(--muted); margin-top: 6px; }
+
+.marketplace-picker { display: flex; flex-wrap: wrap; gap: 10px; }
+.marketplace-picker label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--ink);
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.marketplace-picker input { width: auto; margin: 0; }
+
+.listings {
+  max-width: 1100px;
+  margin: 24px auto 0;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.listing-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--panel);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image { position: relative; aspect-ratio: 1 / 1; background: var(--gray-bg); }
+.card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.overall-status {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.92);
+}
+
+.card-body { padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.card-title { margin: 0; font-size: 15px; }
+.card-price { margin: 0; font-weight: 700; color: var(--accent); }
+
+.card-marketplaces { display: flex; flex-wrap: wrap; gap: 6px; }
+.mp-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: default;
+}
+.mp-badge button {
+  border: none;
+  background: rgba(0,0,0,0.08);
+  border-radius: 999px;
+  padding: 1px 7px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.status-not_listed { background: var(--gray-bg); color: var(--muted); }
+.status-ready_to_post { background: var(--amber-bg); color: var(--amber); }
+.status-listed { background: var(--good-bg); color: var(--good); }
+.status-unlisted { background: var(--gray-bg); color: var(--muted); }
+.status-sold { background: #ede4ff; color: var(--accent); }
+.status-needs_manual_removal { background: var(--red-bg); color: var(--red); }
+.status-error { background: var(--red-bg); color: var(--red); }
+.status-draft { background: var(--gray-bg); color: var(--muted); }
+
+.card-actions { display: flex; gap: 8px; margin-top: 4px; }
+
+.empty-state { color: var(--muted); font-size: 14px; padding: 20px 0; }
